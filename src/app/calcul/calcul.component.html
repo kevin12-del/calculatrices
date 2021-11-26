@@ -1,0 +1,29 @@
+<div class="card">
+  <div class="card-header">
+    <h1 align="center" style="text-decoration: underline; color: green;">Calculator</h1>
+  </div>
+  <div class="card-body">
+    <div class="form-group" align="center">
+      <label >TAPER I: <small id="helpId" class="text-muted">Entrez une premiere valeur</small></label>
+
+      <input [(ngModel)]= "a" type="number" name="a" id="" class="form-control" placeholder="" aria-describedby="helpId" style="width: 50%; text-align: center;">
+      
+    </div>
+    <div class="form-group" align="center">
+      <label>TAPER II: <small id="helpId" class="text-muted">Entrez une deuxieme valeur</small></label>
+      <input [(ngModel)]= "b" type="number" name="b" id="" class="form-control" placeholder="" aria-describedby="helpId" style="width: 50%; text-align: center;">
+      
+    </div>
+    <div class="form-group" align="center">
+      <label style="color: green;">Resultat : <div style="font-size: 50px;"> {{ c }} </div></label>
+    </div>
+    <div align="center" style="font-size: 20px;">
+    <div class="form-group" style="display: block; width: 80%; " align="center">
+     <button class="btn btn-info" (click)="add()" style="width: 20%; flex: 1; margin: 2%; background:  linear-gradient(45deg,red 0%, orange 25%, yellow 50%, green 75%, blue 100%);" >+</button>
+    <button class="btn btn-success" (click)="sub()" style="width: 20%; flex: 1; margin: 2%; background:  linear-gradient(45deg,red 0%, orange 25%, yellow 50%, green 75%, blue 100%);">-</button>
+    <button class="btn btn-warning" (click)="mul()" style="width: 20%; flex: 1; margin: 2%; background:  linear-gradient(45deg,red 0%, orange 25%, yellow 50%, green 75%, blue 100%);">*</button>
+    <button class="btn btn-danger" (click)="div()" style="width: 20%; flex: 1; margin: 2%; background:  linear-gradient(45deg,red 0%, orange 25%, yellow 50%, green 75%, blue 100%);">/</button>
+    </div>
+    </div>
+  </div>
+</div>
